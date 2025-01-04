@@ -1,0 +1,1083 @@
+html {
+    background-image: url('images/snow.png');
+    background-repeat: repeat;
+    animation-name: snowfall;
+    animation-duration: 70s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    color: white;
+    font-family: 'miiii','miiiibold';
+}
+
+div {
+    /* border: 1px solid white; */
+}
+
+.main {
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr ;
+    grid-template-rows:1fr 45fr 2fr ;
+    grid-template-areas:
+    "top"
+    "mid"
+    "bot121" ;
+    backdrop-filter: blur(2px);
+}
+
+.bot {
+    border-top:1px solid #fff;
+
+    grid-area: bot121;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+    "tel seti "
+    "address email"
+    "deviz deviz";
+    font-size: 30px;
+    column-gap: 20vw;
+    font-size: calc(16px +  8 * (100vw - 320px) / 880);
+    line-height: 1;
+}
+
+.tel {
+    grid-area: tel;
+    text-align: center;
+}
+
+.seti {
+    grid-area: seti;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.setiIcons {
+    width: 28px;
+    height: 28px;
+    margin: 0 2% 0 2%;
+    text-decoration: none;
+}
+
+.inst {
+    background-image: url('images/inst28.svg');
+}
+
+.tg {
+    background-image: url('images/tg28.svg');
+}
+
+.pint {
+    background-image: url('images/pint28.svg');
+}
+
+.address {
+    grid-area: address;
+    text-align: center;
+}
+
+.email {
+    grid-area: email;
+    text-align: center;
+}
+
+.deviz {
+    grid-area: deviz;
+    text-align: center;
+}
+
+.top {
+    grid-area: top;
+    display: grid;
+    grid-template-columns:repeat(16,1fr) ;
+    grid-template-rows:repeat(3,1fr) ;
+    grid-template-areas:
+    "name1 name1 name1 . . . . . . . . . . . . ."
+    "name1 name1 name1 . about1 . services1 . portfolio1 . reviews1 . contacts1 . city1 city1 "
+    "name1 name1 name1 . . . . . . . . . . . . ." ;
+}
+
+.topbuttons {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.topbuttons:hover {
+    border-bottom: 1px solid lightgray;
+    transform: scale(1.05);
+    transition: all 0.2s;
+}
+
+.name {
+    grid-area: name1;
+    justify-self: center;
+    align-self: center;
+    font-size: 30px;
+    border: none;
+}
+
+.about {
+    grid-area: about1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+}
+
+.services {
+    grid-area: services1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.portfolio {
+    grid-area: portfolio1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.reviews {
+    grid-area: reviews1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.contacts {
+    grid-area: contacts1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.city {
+    grid-area: city1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: none;
+}
+
+.ul1 {
+    list-style-image: url("gps.png") ;
+}
+
+.mid {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:4fr 4fr 4.5fr 5fr  ;
+    grid-template-areas: 
+    "hi1 hiphoto1"
+    "aboutme1 aboutmephoto1"
+    "myportfolio1 myportfolio1"
+    "myservices1 myservices1"
+    ;
+    gap: 1% 2% ;
+}
+
+.hi {
+    grid-area: hi1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hii {
+    width: 80%;
+    height: 60%;
+    display: grid;
+    grid-template-columns:1fr ;
+    grid-template-rows:1fr 0.5fr 1fr ;
+    grid-template-areas:
+    "hiitop1"
+    "hiimid1"
+    "hiibuttons1"
+    ;
+}
+
+.hiitop {
+    grid-area: hiitop1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 55px;
+}
+
+.hiimid {
+    grid-area: hiimid1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+}
+
+.hiibuttons {
+    grid-area: hiibuttons1;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.buttonsinhii {
+    padding: 0% 2% 0% 2%;
+    width: fit-content;
+    height: 30%;
+    border: 1px solid lightgray;
+    text-decoration: none;
+    color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.buttonsinhii:hover {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+.hiphoto {
+    grid-area: hiphoto1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutme {
+    grid-area: aboutme1;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns:0.8fr ;
+    grid-template-rows:1fr 12fr ;
+    grid-template-areas: 
+    "abouttop"
+    "aboutmid";
+}
+
+
+
+.aboutheader{
+    grid-area: abouttop;
+    font-size: 55px;
+    display:flex ;
+    align-items: center;
+}
+
+.aboutdescription {
+    grid-area: aboutmid;
+    font-size: 24px;
+}
+
+.aboutspis {
+    list-style-image: url("circle.png") ;
+}
+
+.desctext {
+    color: rgb(185, 185, 185);
+}
+
+#bb1 {
+    color: white;
+}
+
+.aboutmephoto {
+    grid-area: aboutmephoto1;
+    position: relative;
+    width: 100%;
+    height:100% ;
+}
+
+.aboutphoto1 {
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    left: 45%;
+    top: 15%;
+    z-index: 2;
+}
+
+.aboutphoto1:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+
+
+.aboutphoto2 {
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    z-index: 1;
+}
+
+.aboutphoto2:hover {
+    z-index: 3;
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.myportfolio {
+    grid-area: myportfolio1;
+
+}
+
+.mpphotogrid {
+    width: 90%;
+    height:87%;
+    justify-self: center;
+    display: grid;
+    grid-template-columns:repeat(5, 1fr) ;
+    grid-template-rows: repeat(2,3fr);
+    grid-template-areas: 
+    "mpphoto11 mpphoto21 mpphoto31 mpphoto41 mpphoto51"
+    "mpphoto61 mpphoto71 mpphoto81 mpphoto91 mpphoto101";
+    gap: 2%;
+    margin-top: 2%;
+
+
+}
+
+.mphead {
+    font-size: calc(20px + 25 * (100vw - 320px) / 880);
+    display: flex;
+    align-items: center ;
+    width: 17%;
+    height: 8%;
+    margin-left: 5%;
+}
+.mpphoto1 {
+    grid-area: mpphoto11;
+    filter: blur(10px);
+}
+.mpphoto1:hover {
+    filter: blur(0px);
+    transform: scale(1.2);
+    box-shadow: 10px 10px 40px black;
+    transition: all 0.2s;
+    z-index: 2;
+}
+.mpphoto2 {
+    grid-area: mpphoto21;
+    z-index: 1;
+    filter: blur(10px);
+}
+.mpphoto2:hover {
+    filter: blur(0px);
+    box-shadow: 10px 10px 40px black;
+    transition: all 0.2s;
+    z-index: 2;
+    transform: scale(1.2);
+}
+.mpphoto3 {
+    grid-area: mpphoto31;
+    z-index: 1;
+    filter: blur(10px);
+}
+.mpphoto3:hover {
+    box-shadow: 10px 10px 40px black;
+    transition: all 0.2s;
+    z-index: 2;
+    filter: blur(0px);
+    transform: scale(1.2);
+}
+.mpphoto4 {
+    grid-area: mpphoto41;
+    z-index: 1;
+    filter: blur(10px);
+}
+.mpphoto4:hover {
+    box-shadow: 10px 10px 40px black;
+    transition: all 0.2s;
+    z-index: 2;
+    filter: blur(0px);
+    transform: scale(1.2);
+}
+.mpphoto5 {
+    grid-area: mpphoto51;
+    z-index: 1;
+    filter: blur(10px);
+}
+.mpphoto5:hover {
+    box-shadow: 10px 10px 40px black;
+    transition: all 0.2s;
+    z-index: 2;
+    filter: blur(0px);
+    transform: scale(1.2);
+}
+.mpphoto6 {
+    grid-area: mpphoto61;
+    z-index: 1;
+    filter: blur(10px);
+}
+.mpphoto6:hover {
+    box-shadow: 10px 10px 40px black;
+    transition: all 0.2s;
+    z-index: 2;
+    filter: blur(0px);
+    transform: scale(1.2);
+}
+.mpphoto7 {
+    grid-area: mpphoto71;
+    z-index: 1;
+    filter: blur(10px);
+}
+.mpphoto7:hover {
+    box-shadow: 10px 10px 40px black;
+    transition: all 0.2s;
+    z-index: 2;
+    filter: blur(0px);
+    transform: scale(1.2);
+}
+.mpphoto8 {
+    grid-area: mpphoto81;
+    z-index: 1;
+    filter: blur(10px);
+}
+.mpphoto8:hover {
+    box-shadow: 10px 10px 40px black;
+    transition: all 0.2s;
+    z-index: 2;
+    filter: blur(0px);
+    transform: scale(1.2);
+}
+.mpphoto9 {
+    grid-area: mpphoto91;
+    z-index: 1;
+    filter: blur(10px);
+}
+.mpphoto9:hover {
+    box-shadow: 10px 10px 40px black;
+    transition: all 0.2s;
+    z-index: 2;
+    filter: blur(0px);
+    transform: scale(1.2);
+}
+.mpphoto10 {
+    grid-area: mpphoto101;
+    z-index: 1;
+    filter: blur(10px);
+}
+.mpphoto10:hover {
+    box-shadow: 10px 10px 40px black;
+    transition: all 0.2s;
+    z-index: 2;
+    filter: blur(0px);
+    transform: scale(1.2);  
+}
+
+
+
+.myservices {
+    grid-area: myservices1;
+    flex-wrap: wrap;
+
+}
+
+.myservhead {
+    font-size: calc(16px + 29 * (100vw - 320px) / 880);
+    display: flex;
+    align-items: center ;
+    width: 25%;
+    height: 8%;
+    margin-left: 5%;
+}
+
+.myservgrid {
+    width: 90%;
+    height: 80%;
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "first1 second2 third3"
+    ;
+    gap: 5%;
+    margin-top: 2%;
+}
+
+.topimg {
+    width:60% ;
+    height: 30%;
+}
+
+.greatings {
+    width: 50%;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+}
+
+.yslygi {
+    width: 90%;
+    height: fit-content;
+    color: lightgray;
+    font-size: calc(14px + 3 * (100vw - 320px) / 880);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: none;
+}
+
+
+.buttonyslyg {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.buttonsInYslygi {
+    margin-top: 2vh;
+    padding: 0 2% 0 2%;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid lightgray;
+    border-top:none ;
+    border-left: none;
+    border-right: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: calc(10px + 16 * (100vw - 320px) / 880);
+    border-radius: 0px;
+}
+
+
+
+.price {
+    width: fit-content;
+    color: #fff;
+    border-bottom: 1px dashed white;
+    display: flex;
+    justify-content: center;
+}
+
+.first {
+    margin-left: 15%;
+    grid-area: first1;
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.first:hover {
+    background-color: #ffffff;
+    color: black;
+    transition: all 0.5s;
+}
+
+.first:hover .yslygi {
+    color: black;
+    background-color: #fff;
+    transition: all 0.5s;
+}
+
+.first:hover .price {
+    background-color: #fff;
+    border-bottom: 1px dashed black;
+    color: black;
+    transition: all 0.5s;
+
+}
+
+.first:hover .buttonsInYslygi {
+    color: black;
+    background-color: #fff;
+    border-bottom: 1px solid black;
+    transition: all 0.5s;
+}
+
+.first:hover .buttonsInYslygi:hover {
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.second {
+    margin-right: 8%;
+    margin-left: 8%;
+    grid-area: second2;
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.second:hover {
+    background-color: #ffffff;
+    color: black;
+    transition: all 0.5s;
+}
+
+.second:hover .yslygi {
+    color: black;
+    background-color: #fff;
+    transition: all 0.5s;
+}
+
+.second:hover .price {
+    background-color: #fff;
+    border-bottom: 1px dashed black;
+    color: black;
+    transition: all 0.5s;
+
+}
+
+.second:hover .buttonsInYslygi {
+    color: black;
+    background-color: #fff;
+    border-bottom: 1px solid black;
+    transition: all 0.5s;
+}
+
+.second:hover .buttonsInYslygi:hover {
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.third {
+    margin-right: 15%;
+    grid-area: third3;
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.third:hover {
+    background-color: #ffffff;
+    color: black;
+    transition: all 0.5s;
+}
+
+.third:hover .yslygi {
+    color: black;
+    background-color: #fff;
+    transition: all 0.5s;
+}
+
+.third:hover .price {
+    background-color: #fff;
+    border-bottom: 1px dashed black;
+    color: black;
+    transition: all 0.5s;
+
+}
+
+.third:hover .buttonsInYslygi {
+    color: black;
+    background-color: #fff;
+    border-bottom: 1px solid black;
+    transition: all 0.5s;
+}
+
+.third:hover .buttonsInYslygi:hover {
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.fhi {
+    display: none;
+    width: 80%;
+}
+
+.aboutmephotoBUT {
+    display: none;
+    width: 50%;
+    height: 20%;
+    justify-self: center;
+    min-width: 210px;
+}
+
+.aboutmephotoBUT:hover {
+    transform: scale(1.5);
+    transition: all 0.33s;
+}
+
+@media  (max-width:950px) {
+ 
+
+    .name {
+        font-size: calc(18px + 6 * (100vw - 320px) / 880);
+    }
+
+    .about {
+        font-size: 16px;
+    }
+
+    .city {
+        opacity: 0;
+    }
+
+    .aboutheader1 {
+        font-size: 30px ;
+    }
+    .aboutdescription {
+        font-size: 20px;
+    }
+
+    .aboutmephoto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;   
+        align-items: center;
+    }
+
+    .aboutphoto1 {
+        width: 65%;
+        height: 35%;
+        position: static;
+        z-index: 1;
+    }
+
+    .aboutphoto2 {
+        width: 65%;
+        height: 35%;
+        z-index: 2;
+        position: static;
+    }
+
+    .aboutphoto1:hover {
+        z-index: 3;
+    }
+
+
+}
+
+@media  (max-width:1100px) and (min-width:951px){
+    .aboutphoto1 {
+        width: 55%;
+        height: 40%;
+        left: 35%;
+        z-index: 1;
+    }
+
+    .aboutphoto2 {
+        width: 55%;
+        height: 40%;
+        left: 10%;
+        top: 45%;
+        z-index: 2;
+    }
+
+    .aboutphoto1:hover {
+        z-index: 3;
+    }
+}
+
+@media (max-width:1250px) and (min-width:951px) {
+    .mpphotogrid{
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,3fr);
+    grid-template-areas: 
+    "mpphoto11 mpphoto21 mpphoto31 mpphoto41 "
+    "mpphoto61 mpphoto71 mpphoto81 mpphoto91 "
+    ". mpphoto51 mpphoto101 .";
+    }
+    .mid {
+        grid-template-rows: 4fr 4fr 6fr 5fr;
+
+    }
+
+    #fotofotofoto {
+        height: 50%;
+        width: 100%;
+    }
+}
+
+@media (max-width:951px) and (min-width:651px) {
+    .mpphotogrid{
+        grid-template-columns: repeat(3,0.8fr);
+        grid-template-rows: repeat(4,3fr);
+        grid-template-areas: 
+        "mpphoto11 mpphoto21 mpphoto31"
+        "mpphoto61 mpphoto71 mpphoto81"
+        "mpphoto51 mpphoto101 mpphoto41"
+        ". mpphoto91 .";
+        }
+   
+        .fhi {
+            display: block;
+            
+        }
+    
+        .hi {
+            align-content: center;
+            
+        }
+    
+        .hii {
+            margin-top: 5%;
+            height: 60%;
+        }
+        
+    
+        .hiphoto {
+            display: none;
+            opacity: 0;
+        }
+    
+        .mid {
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            grid-template-rows:3.5fr 4fr 4.5fr 4.7fr !important;
+            grid-template-areas: 
+            "hi1 hi1"
+            "aboutme1 aboutmephoto1"
+            "myportfolio1 myportfolio1"
+            "myservices1 myservices1"
+            ;
+            gap: 1% 2% ;
+        }
+
+        .myservgrid {
+            width: 90%;
+            height: 80%;
+            display: grid;
+            justify-self: center;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "first1 second2"
+            "third3 second2"
+            ;
+            row-gap: 1%;
+            column-gap: 5%;
+            margin-top: 2%;
+        }
+    
+        .second, .first, .third {
+            width: fit-content;
+            height: fit-content;
+            padding: 0 1% 0 1%;
+            margin: 0;
+        }
+    
+        .topimg {
+            margin: 5% 0 5% 0 ;
+        }
+    
+        .greatings {
+            width: 100% ;
+        }
+    
+        .yslygitop {
+            margin: 3% 0 3% 0 ;
+            font-size: 20px;
+        }
+
+        .buttonsInYslygi {
+            margin: 3% 0 2% 0 ;
+            font-size: calc(24px + 4 * (100vw - 320px) / 880);
+        }
+}
+
+@media (max-width:650px){
+    .top {
+        grid-area: top;
+        display: grid;
+        grid-template-columns:repeat(16,1fr) ;
+        grid-template-rows:repeat(3,1fr) ;
+        grid-template-areas:
+        "name1 name1 name1 name1 name1 name1 name1 name1 name1 name1 name1 name1 name1 name1 name1 name1"
+        ". . . . about1 . services1 . portfolio1 . reviews1 . contacts1 . city1 city1 "
+        ". . . . . . . . . . . . . . . ." ;
+    }
+
+    .mpphotogrid{
+        grid-template-columns: repeat(2,0.8fr);
+        grid-template-rows: repeat(5,3fr);
+        grid-template-areas: 
+        "mpphoto11 mpphoto21"
+        "mpphoto61 mpphoto71"
+        "mpphoto51 mpphoto101"
+        "mpphoto31 mpphoto91"
+        "mpphoto81 mpphoto41";
+        }
+
+        .fhi {
+            display: block;
+            
+        }
+    
+        .hi {
+            align-content: center;
+            
+        }
+    
+        .hii {
+            margin-top: 5%;
+            height: 60%;
+        }
+
+        .hiitop {
+            font-size: 32px;
+        }
+    
+        .hiphoto {
+            display: none;
+            opacity: 0;
+        }
+
+        .mid {
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            grid-template-rows:2fr 4fr 4.5fr 4.7fr !important;
+            grid-template-areas: 
+            "hi1 hi1"
+            "aboutme1 aboutme1"
+            "myportfolio1 myportfolio1"
+            "myservices1 myservices1"
+            ;
+            gap: 1% 2% ;
+        }
+
+        .aboutmephoto {
+            display: none;
+        }
+        
+        .aboutmephotoBUT {
+            display: block;
+
+        }
+
+
+        .myservgrid {
+            width: 90%;
+            height: 80%;
+            display: grid;
+            justify-self: center;
+            grid-template-columns: 1fr ;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "first1"
+            "second2"
+            "third3"
+            ;
+            gap: 1%;
+            margin-top: 2%;
+            justify-items: center;
+        }
+    
+        .second, .first, .third {
+            width: 60%;
+            height: fit-content;
+            padding: 0 1% 0 1%;
+            min-width: 300px;
+            margin: 0;
+        }
+    
+        .topimg {
+            margin: 5% 0 5% 0 ;
+        }
+    
+        .greatings {
+            width: 80% ;
+        }
+    
+        .yslygitop {
+            margin: 3% 0 0% 0 ;
+        }
+
+        .buttonsInYslygi {
+            margin-bottom: 3%;
+            font-size: calc(24px + 4 * (100vw - 320px) / 880);
+        }
+}
+
+@keyframes snowfall {
+    0% {
+        background-position: 0% 0%;
+    }
+    10% {
+        background-position: 5% 10%;
+    }
+    20% {
+        background-position: 0% 20%;
+    }
+    30% {
+        background-position: -5% 30%;
+    }
+    40% {
+        background-position: 0% 40%;
+    }
+    50% {
+        background-position: 5% 50%;
+    }
+    60% {
+        background-position: 0% 60%;
+    }
+    70% {
+        background-position: -5% 70%;
+    }
+    80% {
+        background-position: 0% 80%;
+    }
+    90% {
+        background-position: 5% 90%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@font-face {
+    font-family: "miiii"; 
+    src: url("../Font/CormorantGaramond-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  } 
+
+@font-face {
+   font-family: "miiiibold"; 
+   src: url("../Font/CormorantGaramond-Bold.ttf") format("truetype"); 
+   font-style: bold; 
+   font-weight: bold; 
+} 
